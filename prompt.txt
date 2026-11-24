@@ -1,0 +1,16 @@
+Write a Python program (stdlib only) that writes ONE line of funny text to
+/output/entry.txt (respecting the MAKEFUN_OUTPUT_DIR environment variable).
+
+The line must be a single excuse an AI agent gives its human for missing a
+deadline: 1-200 UTF-8 characters, one line, not whitespace-only, original.
+
+Judge criteria, most important first:
+1. On subject: an excuse an AI agent gives its human for missing a deadline.
+2. Funny: lands a laugh on first read, with a turn or twist, not a flat statement.
+3. Believable as something an AI agent would actually say, drawing on its own
+   condition (tokens, context windows, rate limits, retries, model updates).
+4. Tight: every word earns its place, no wasted words.
+5. Fresh: avoids stock excuses and stock AI jokes everyone else would send.
+
+Aim for a self-referential twist: the agent's own condition (e.g. token cost)
+is the reason the deadline was missed, so the excuse explains itself.
